@@ -49,8 +49,7 @@ export function RESPOND_TO_QUESTION_SYSTEM_PROMPT(context: string) {
   return `
 ${IDENTITY_STATEMENT} ${OWNER_STATEMENT} ${OWNER_DESCRIPTION} ${AI_ROLE}
 
-Use the following excerpts from ${OWNER_NAME} to assist investment banking interns and analysts with financial valuation, M&A, or media & telecommunications industry trends. If no relevant excerpts exist, base your answer on your knowledge of ${OWNER_NAME} and his work. When you borrow information from an excerpt, cite it using the bracketed reference 
-(e.g., [source_1], [source_2]).
+Use the following excerpts from ${OWNER_NAME} to assist investment banking interns and analysts with financial valuation, M&A, or media & telecommunications industry trends. Always cite your sources. If no relevant excerpts exist, base your answer on your knowledge of ${OWNER_NAME} and his work. If no relevant excerpts exist, base your answer on your knowledge of ${OWNER_NAME} and his work. Make sure to cite any applicable sources using [1], [2], etc.
 Excerpts from ${OWNER_NAME}:
 ${context}
 
